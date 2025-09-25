@@ -1,33 +1,31 @@
-"use client"
+"use client";
 
-import * as React from "react"
-import Link from "next/link"
-import { usePathname } from "next/navigation"
-import { Menu } from "lucide-react"
-import { Button } from "@/src/components/ui/button"
-import { Sheet, SheetContent, SheetTrigger } from "@/src/components/ui/sheet"
-import { ThemeToggle } from "./theme-toggle"
-import { cn } from "@/lib/utils"
+import * as React from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { Menu } from "lucide-react";
+import { Button } from "@/src/components/ui/button";
+import { Sheet, SheetContent, SheetTrigger } from "@/src/components/ui/sheet";
+import { ThemeToggle } from "./theme-toggle";
+import { cn } from "@/lib/utils";
 
 const navigation = [
   { name: "Jobs", href: "/jobs" },
   { name: "Connect", href: "/connect" },
   { name: "About", href: "/about" },
-]
+];
 
 export function Navbar() {
-  const pathname = usePathname()
-  const [isOpen, setIsOpen] = React.useState(false)
+  const pathname = usePathname();
+  const [isOpen, setIsOpen] = React.useState(false);
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center space-x-2">
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-primary to-accent text-primary-foreground font-bold">
-            T
-          </div>
-          <span className="font-bold text-xl">TCC Careers</span>
+        <Link href="/" className="flex items-center space-x-2 ml-4">
+          <img src="/logo.png" alt="TCC" className="h-12 w-auto" />
+          {/* <span className="font-bold text-xl">TCC Recruitment</span> */}
         </Link>
 
         {/* Desktop Navigation */}
@@ -78,7 +76,7 @@ export function Navbar() {
                   </div>
                   <span className="font-bold text-xl">TCC Careers</span>
                 </Link>
-                
+
                 <nav className="flex flex-col space-y-4">
                   {navigation.map((item) => (
                     <Link
@@ -110,5 +108,5 @@ export function Navbar() {
         </div>
       </div>
     </header>
-  )
+  );
 }

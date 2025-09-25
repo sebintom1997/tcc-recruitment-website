@@ -1,10 +1,11 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
+import { useRouter } from "next/navigation"
 import { useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { z } from "zod"
-import { Loader2, Check, Upload } from "lucide-react"
+import { Check } from "lucide-react"
 import { Button } from "@/src/components/ui/button"
 import { Input } from "@/src/components/ui/input"
 import { Label } from "@/src/components/ui/label"
@@ -35,6 +36,7 @@ const interestOptions = [
 ]
 
 export default function ConnectPage() {
+  const router = useRouter()
   const [step, setStep] = useState(1)
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitted, setSubmitted] = useState(false)
@@ -55,6 +57,35 @@ export default function ConnectPage() {
   })
 
   const watchedFile = watch("cvFile")
+
+  // Load GoHighLevel form script when component mounts
+  useEffect(() => {
+    // Check if script is already loaded
+    if (!document.querySelector('script[src="https://link.msgsndr.com/js/form_embed.js"]')) {
+      const script = document.createElement('script')
+      script.src = "https://link.msgsndr.com/js/form_embed.js"
+      script.async = true
+      document.head.appendChild(script)
+    }
+  }, [])
+
+  // Construct form URL with interests and goals
+  const getFormUrl = () => {
+    const baseUrl = "https://api.leadconnectorhq.com/widget/form/qC6yGWQ1taUkHNoycyci"
+    const params = new URLSearchParams({
+      // Pass selected interests and goals
+      interests_from_website: selectedInterests.join(','),
+      goals_from_website: watch("goals") || '',
+      source: 'website_connect',
+      
+      // Timestamp when they reached step 3
+      connect_timestamp_from_website: new Date().toISOString(),
+      
+      // Page URL for reference
+      page_url: typeof window !== 'undefined' ? window.location.href : ''
+    })
+    return `${baseUrl}?${params.toString()}`
+  }
 
   const handleInterestToggle = (interest: string) => {
     const updated = selectedInterests.includes(interest)
@@ -101,21 +132,32 @@ export default function ConnectPage() {
     if (step > 1) setStep(step - 1)
   }
 
+  // Redirect to home page after showing thank you message
+  useEffect(() => {
+    if (submitted) {
+      const timer = setTimeout(() => {
+        router.push('/')
+      }, 3000) // 3 seconds delay
+
+      return () => clearTimeout(timer)
+    }
+  }, [submitted, router])
+
   if (submitted) {
     return (
       <Section>
         <Container>
-          <div className="max-w-2xl mx-auto text-center">
-            <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-              <Check className="w-8 h-8 text-green-600" />
+          <div className="max-w-md mx-auto text-center py-8">
+            <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <Check className="w-6 h-6 text-green-600" />
             </div>
-            <h1 className="text-3xl md:text-4xl font-bold mb-4">Thank You!</h1>
-            <p className="text-xl text-muted-foreground mb-8">
-              We&apos;ve received your information and will be in touch soon with relevant opportunities.
+            <h1 className="text-2xl font-bold mb-3">Thank You!</h1>
+            <p className="text-muted-foreground mb-4">
+              We&apos;ve received your information and will be in touch soon.
             </p>
-            <Button onClick={() => setSubmitted(false)}>
-              Submit Another Form
-            </Button>
+            <p className="text-sm text-muted-foreground">
+              Redirecting to home page in a few seconds...
+            </p>
           </div>
         </Container>
       </Section>
@@ -213,63 +255,28 @@ export default function ConnectPage() {
                   </div>
                 )}
 
-                {/* Step 3: Contact */}
+                {/* Step 3: GoHighLevel Form */}
                 {step === 3 && (
-                  <div className="space-y-6">
-                    <div>
-                      <Label htmlFor="name">Full Name *</Label>
-                      <Input
-                        id="name"
-                        {...register("name")}
-                        placeholder="Enter your full name"
-                        className="mt-1"
-                      />
-                      {errors.name && (
-                        <p className="text-sm text-red-600 mt-1">{errors.name.message}</p>
-                      )}
+                  <div className="space-y-4">
+                    <div className="text-center mb-4">
+                      <p className="text-sm text-muted-foreground">
+                        Complete your information below
+                      </p>
                     </div>
-
-                    <div>
-                      <Label htmlFor="email">Email Address *</Label>
-                      <Input
-                        id="email"
-                        type="email"
-                        {...register("email")}
-                        placeholder="Enter your email address"
-                        className="mt-1"
+                    
+                    {/* GoHighLevel Embedded Form */}
+                    <div className="w-full h-[800px] rounded-lg overflow-auto border">
+                      <iframe
+                        src={getFormUrl()}
+                        style={{
+                          width: '100%',
+                          height: '100%',
+                          minHeight: '800px',
+                          border: 'none',
+                          borderRadius: '8px'
+                        }}
+                        title="Connect With Us Form"
                       />
-                      {errors.email && (
-                        <p className="text-sm text-red-600 mt-1">{errors.email.message}</p>
-                      )}
-                    </div>
-
-
-                    <div>
-                      <Label htmlFor="cvFile">Upload CV (Optional)</Label>
-                      <div className="mt-1">
-                        <input
-                          id="cvFile"
-                          type="file"
-                          accept=".pdf,.doc,.docx"
-                          onChange={handleFileChange}
-                          className="hidden"
-                        />
-                        <Label
-                          htmlFor="cvFile"
-                          className="flex items-center justify-center w-full h-24 border-2 border-dashed border-muted-foreground/25 rounded-lg cursor-pointer hover:border-muted-foreground/50 transition-colors"
-                        >
-                          {watchedFile ? (
-                            <div className="text-center">
-                              <p className="text-sm font-medium">{watchedFile.name}</p>
-                            </div>
-                          ) : (
-                            <div className="text-center">
-                              <Upload className="w-6 h-6 mx-auto mb-2 text-muted-foreground" />
-                              <p className="text-sm">Click to upload CV</p>
-                            </div>
-                          )}
-                        </Label>
-                      </div>
                     </div>
                   </div>
                 )}
@@ -294,19 +301,9 @@ export default function ConnectPage() {
                       Next
                     </Button>
                   ) : (
-                    <Button
-                      type="submit"
-                      disabled={isSubmitting}
-                    >
-                      {isSubmitting ? (
-                        <>
-                          <Loader2 className="w-4 h-4 mr-2 animate-spin" />
-                          Submitting...
-                        </>
-                      ) : (
-                        "Submit"
-                      )}
-                    </Button>
+                    <div className="text-sm text-muted-foreground">
+                      Complete the form above to submit
+                    </div>
                   )}
                 </div>
               </form>

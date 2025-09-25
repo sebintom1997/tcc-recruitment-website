@@ -1,5 +1,5 @@
-import Link from "next/link"
-import { Github, Twitter, Linkedin } from "lucide-react"
+import Link from "next/link";
+import { Github, Twitter, Linkedin } from "lucide-react";
 
 const footerLinks = {
   company: [
@@ -17,11 +17,14 @@ const footerLinks = {
     { name: "LinkedIn", href: "https://linkedin.com", icon: Linkedin },
     { name: "GitHub", href: "https://github.com", icon: Github },
   ],
-}
+};
 
 export function Footer() {
   return (
-    <footer className="border-t bg-background">
+    <footer
+      className="border-t bg-background"
+      style={{ margin: '20px' }}
+    >
       <div className="container py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
@@ -33,7 +36,7 @@ export function Footer() {
               <span className="font-bold text-xl">TCC Careers</span>
             </Link>
             <p className="text-muted-foreground text-sm leading-6">
-              Connecting exceptional talent with world-class opportunities. 
+              Connecting exceptional talent with world-class opportunities.
               Building the future of global recruitment, one match at a time.
             </p>
           </div>
@@ -77,7 +80,7 @@ export function Footer() {
             <h3 className="font-semibold">Connect</h3>
             <div className="flex space-x-4">
               {footerLinks.social.map((social) => {
-                const Icon = social.icon
+                const Icon = social.icon;
                 return (
                   <Link
                     key={social.name}
@@ -89,11 +92,13 @@ export function Footer() {
                     <Icon className="h-5 w-5" />
                     <span className="sr-only">{social.name}</span>
                   </Link>
-                )
+                );
               })}
             </div>
             <div className="text-muted-foreground text-sm">
-              <p>Follow us for updates on new opportunities and company news.</p>
+              <p>
+                Follow us for updates on new opportunities and company news.
+              </p>
             </div>
           </div>
         </div>
@@ -108,5 +113,5 @@ export function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }

@@ -8,9 +8,8 @@ A production-ready Next.js 14 application for a global recruitment site, built w
 - **Component Library**: shadcn/ui with custom theming
 - **Responsive Design**: Mobile-first approach with beautiful UI
 - **Job Management**: Dynamic job listings with search and filters
-- **Application System**: CV upload and form submission
-- **CRM Integration**: HighLevel (GoHighLevel) API v2 integration
-- **File Storage**: AWS S3 with presigned uploads
+- **Application System**: GoHighLevel embedded forms
+- **CRM Integration**: Direct form submission to GoHighLevel
 - **Motion Design**: Framer Motion animations
 - **SEO Optimized**: JSON-LD structured data, meta tags
 - **Dark Mode**: System preference with manual toggle
@@ -21,9 +20,8 @@ A production-ready Next.js 14 application for a global recruitment site, built w
 - **Frontend**: Next.js 14 (App Router), TypeScript, React 19
 - **Styling**: Tailwind CSS, shadcn/ui components
 - **Animation**: Framer Motion
-- **Forms**: React Hook Form + Zod validation
-- **Storage**: AWS S3 (presigned uploads)
-- **CRM**: HighLevel (GoHighLevel) API v2
+- **Forms**: GoHighLevel embedded forms
+- **CRM**: GoHighLevel direct integration
 - **Analytics**: Plausible Analytics
 
 ## 📦 Installation
@@ -50,22 +48,8 @@ A production-ready Next.js 14 application for a global recruitment site, built w
    NEXT_PUBLIC_SITE_URL=https://your-domain.com
    NEXT_PUBLIC_PLAUSIBLE_DOMAIN=your-domain.com
 
-   # HighLevel (GoHighLevel) API Configuration
-   GHL_BASE_URL=https://services.leadconnectorhq.com
-   GHL_API_VERSION=2021-07-28
-   GHL_LOCATION_ID=your_location_id
-   GHL_PIPELINE_ID=your_pipeline_id
-   GHL_STAGE_ID=your_stage_id
-   GHL_TOKEN=your_api_token
-
-   # HighLevel Custom Field IDs
-   GHL_CF_CV_URL=your_cv_field_id
-
-   # AWS S3 Configuration
-   S3_BUCKET=your-s3-bucket
-   S3_REGION=us-east-1
-   S3_ACCESS_KEY_ID=your_access_key
-   S3_SECRET_ACCESS_KEY=your_secret_key
+   # No additional configuration needed
+   # GoHighLevel integration uses embedded forms
    ```
 
 4. **Install shadcn/ui components** (if needed)
@@ -96,7 +80,6 @@ A production-ready Next.js 14 application for a global recruitment site, built w
 │   │   ├── connect/           # Connect form
 │   │   ├── about/             # About page
 │   │   ├── privacy/           # Privacy policy
-│   │   └── api/               # API routes
 │   └── components/
 │       └── ui/                # shadcn/ui components
 ├── components/                 # Custom components
@@ -108,8 +91,6 @@ A production-ready Next.js 14 application for a global recruitment site, built w
 │   └── ...
 ├── lib/                       # Utility libraries
 │   ├── jobs.ts               # Job data management
-│   ├── highlevel.ts          # HighLevel API integration
-│   ├── s3.ts                 # AWS S3 utilities
 │   └── utils.ts              # General utilities
 ├── data/
 │   └── jobs.json             # Sample job data
@@ -119,45 +100,15 @@ A production-ready Next.js 14 application for a global recruitment site, built w
 
 ## 📝 Configuration
 
-### HighLevel Setup
+### GoHighLevel Setup
 
-1. **Create a HighLevel account** and get your API credentials
-2. **Set up custom fields** for CV URL
-3. **Create a pipeline** for job applications and talent pool
-4. **Configure webhooks** (optional) for real-time updates
-
-### AWS S3 Setup
-
-1. **Create an S3 bucket** for file uploads
-2. **Configure CORS** to allow uploads from your domain:
-   ```json
-   [
-     {
-       "AllowedHeaders": ["*"],
-       "AllowedMethods": ["GET", "POST", "PUT"],
-       "AllowedOrigins": ["https://your-domain.com"],
-       "ExposeHeaders": ["ETag"]
-     }
-   ]
-   ```
-
-3. **Set up IAM user** with limited permissions:
-   ```json
-   {
-     "Version": "2012-10-17",
-     "Statement": [
-       {
-         "Effect": "Allow",
-         "Action": [
-           "s3:PutObject",
-           "s3:PutObjectAcl",
-           "s3:GetObject"
-         ],
-         "Resource": "arn:aws:s3:::your-bucket-name/*"
-       }
-     ]
-   }
-   ```
+1. **Create GoHighLevel forms** for job applications and connect page
+2. **Get form IDs** from your GoHighLevel account
+3. **Update form URLs** in the drawer components:
+   - Update `src` URL in `components/apply-drawer.tsx`
+   - Create `connect-drawer.tsx` if needed for connect form
+4. **Set up hidden fields** in forms to capture job details (optional):
+   - `job_title`, `job_slug`, `job_department`, `job_location`, etc.
 
 ### Job Data Management
 
@@ -231,25 +182,23 @@ pnpm build
 
 ## 🔒 Security
 
-- **Form Validation**: Client and server-side with Zod
-- **File Uploads**: Restricted types and sizes
-- **API Routes**: Input validation and error handling
-- **CORS**: Properly configured for S3 uploads
+- **Form Validation**: Handled by GoHighLevel forms
+- **Secure Submission**: Direct to GoHighLevel servers
+- **No API Exposure**: Forms handled client-side
 
 ## 🐛 Troubleshooting
 
 ### Common Issues
 
 1. **Build Errors**: Check TypeScript errors and fix imports
-2. **API Issues**: Verify environment variables are set
-3. **Upload Issues**: Check S3 bucket permissions and CORS
-4. **HighLevel Issues**: Verify API credentials and field IDs
+2. **Form Issues**: Verify GoHighLevel form URLs are correct
+3. **Display Issues**: Check form embedding and CSS
 
 ### Getting Help
 
 - Check the console for detailed error messages
-- Verify all environment variables are correctly set
-- Ensure external services (HighLevel, S3) are properly configured
+- Verify GoHighLevel form URLs are accessible
+- Ensure forms are published and active in GoHighLevel
 
 ## 📄 License
 
