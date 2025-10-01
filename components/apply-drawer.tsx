@@ -6,9 +6,7 @@ import {
   SheetContent,
   SheetHeader,
   SheetTitle,
-  SheetTrigger,
 } from "@/src/components/ui/sheet";
-import { Button } from "@/src/components/ui/button";
 import type { Job } from "@/lib/jobs";
 
 interface ApplyDrawerProps {

@@ -38,33 +38,34 @@ export default function EditJobPage({ params }: EditJobPageProps) {
   })
 
   useEffect(() => {
+    const fetchJobData = async (jobSlug: string) => {
+      try {
+        const response = await fetch(`/api/admin/jobs/${jobSlug}`)
+        if (response.ok) {
+          const data = await response.json()
+          const { slug, postedAt, ...jobData } = data.job
+          setFormData(jobData)
+        } else {
+          alert("Job not found")
+          router.push("/admin/jobs")
+        }
+      } catch (error) {
+        console.error("Error fetching job:", error)
+        alert("Error loading job")
+        router.push("/admin/jobs")
+      } finally {
+        setIsLoading(false)
+      }
+    }
+
     const getParams = async () => {
       const resolvedParams = await params
       setSlug(resolvedParams.slug)
-      fetchJob(resolvedParams.slug)
+      fetchJobData(resolvedParams.slug)
     }
     getParams()
-  }, [params])
+  }, [params, router])
 
-  const fetchJob = async (jobSlug: string) => {
-    try {
-      const response = await fetch(`/api/admin/jobs/${jobSlug}`)
-      if (response.ok) {
-        const data = await response.json()
-        const { slug: _, postedAt: __, ...jobData } = data.job
-        setFormData(jobData)
-      } else {
-        alert("Job not found")
-        router.push("/admin/jobs")
-      }
-    } catch (error) {
-      console.error("Error fetching job:", error)
-      alert("Error loading job")
-      router.push("/admin/jobs")
-    } finally {
-      setIsLoading(false)
-    }
-  }
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()

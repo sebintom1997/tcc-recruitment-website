@@ -7,7 +7,6 @@ import { zodResolver } from "@hookform/resolvers/zod"
 import { z } from "zod"
 import { Check } from "lucide-react"
 import { Button } from "@/src/components/ui/button"
-import { Input } from "@/src/components/ui/input"
 import { Label } from "@/src/components/ui/label"
 import { Textarea } from "@/src/components/ui/textarea"
 import { Card, CardContent, CardHeader, CardTitle } from "@/src/components/ui/card"
@@ -56,7 +55,6 @@ export default function ConnectPage() {
     }
   })
 
-  const watchedFile = watch("cvFile")
 
   // Load GoHighLevel form script when component mounts
   useEffect(() => {
@@ -96,12 +94,6 @@ export default function ConnectPage() {
     setValue("interests", updated)
   }
 
-  const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const file = event.target.files?.[0]
-    if (file) {
-      setValue("cvFile", file)
-    }
-  }
 
   const onSubmit = async (data: ConnectFormData) => {
     setIsSubmitting(true)

@@ -7,7 +7,6 @@ import { Input } from "@/src/components/ui/input"
 import { Label } from "@/src/components/ui/label"
 import { Card, CardContent, CardHeader, CardTitle } from "@/src/components/ui/card"
 import { Container } from "@/components/container"
-import { Section } from "@/components/section"
 import { Shield, User, Lock } from "lucide-react"
 
 export default function AdminLogin() {
