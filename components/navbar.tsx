@@ -74,7 +74,7 @@ export function Navbar() {
                   <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-primary to-accent text-primary-foreground font-bold">
                     T
                   </div>
-                  <span className="font-bold text-xl">TCC Careers</span>
+                  <span className="font-bold text-xl">TCC Recruitment</span>
                 </Link>
 
                 <nav className="flex flex-col space-y-4">

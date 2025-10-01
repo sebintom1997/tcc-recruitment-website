@@ -7,7 +7,7 @@ export default function AboutPage() {
       <Container>
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            About TCC Careers
+            About TCC Recruitment
           </h1>
           <div className="prose prose-lg max-w-none">
             <p className="text-xl text-muted-foreground mb-8">

@@ -8,7 +8,7 @@ import { Section } from "./section"
 
 const testimonials = [
   {
-    content: "TCC Careers helped me find my dream role at a company that truly values my skills and growth. The process was seamless and the team was incredibly supportive throughout.",
+    content: "TCC Recruitment helped me find my dream role at a company that truly values my skills and growth. The process was seamless and the team was incredibly supportive throughout.",
     author: "Sarah Chen",
     role: "Senior Product Designer",
     company: "Tech Startup",

@@ -33,7 +33,7 @@ export function Footer() {
               <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-primary-foreground font-bold">
                 T
               </div>
-              <span className="font-bold text-xl">TCC Careers</span>
+              <span className="font-bold text-xl">TCC Recruitment</span>
             </Link>
             <p className="text-muted-foreground text-sm leading-6">
               Connecting exceptional talent with world-class opportunities.
@@ -105,7 +105,7 @@ export function Footer() {
 
         <div className="mt-12 pt-8 border-t flex flex-col md:flex-row justify-between items-center">
           <p className="text-muted-foreground text-sm">
-            © {new Date().getFullYear()} TCC Careers. All rights reserved.
+            © {new Date().getFullYear()} TCC Recruitment. All rights reserved.
           </p>
           <p className="text-muted-foreground text-sm mt-4 md:mt-0">
             Built with ❤️ for exceptional talent worldwide

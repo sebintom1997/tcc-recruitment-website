@@ -10,23 +10,23 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "TCC Careers - Connect Exceptional Talent with World-Class Opportunities",
+  title: "TCC Recruitment - Connect Exceptional Talent with World-Class Opportunities",
   description: "Join thousands of professionals who've found their perfect match. From startups to Fortune 500, we connect talent with purpose.",
   keywords: ["careers", "jobs", "recruitment", "talent", "opportunities", "hiring"],
-  authors: [{ name: "TCC Careers" }],
-  creator: "TCC Careers",
+  authors: [{ name: "TCC Recruitment" }],
+  creator: "TCC Recruitment",
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://careers.tcc.com"),
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "/",
-    title: "TCC Careers - Connect Exceptional Talent with World-Class Opportunities",
+    title: "TCC Recruitment - Connect Exceptional Talent with World-Class Opportunities",
     description: "Join thousands of professionals who've found their perfect match. From startups to Fortune 500, we connect talent with purpose.",
-    siteName: "TCC Careers",
+    siteName: "TCC Recruitment",
   },
   twitter: {
     card: "summary_large_image",
-    title: "TCC Careers - Connect Exceptional Talent with World-Class Opportunities",
+    title: "TCC Recruitment - Connect Exceptional Talent with World-Class Opportunities",
     description: "Join thousands of professionals who've found their perfect match. From startups to Fortune 500, we connect talent with purpose.",
     creator: "@tcc_careers",
   },

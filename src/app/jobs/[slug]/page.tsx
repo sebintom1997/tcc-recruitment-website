@@ -26,16 +26,16 @@ export async function generateMetadata({ params }: JobPageProps): Promise<Metada
   
   if (!job) {
     return {
-      title: "Job Not Found - TCC Careers",
+      title: "Job Not Found - TCC Recruitment",
     }
   }
 
   return {
-    title: `${job.title} - TCC Careers`,
+    title: `${job.title} - TCC Recruitment`,
     description: job.pitch,
     keywords: [job.title, job.dept, job.workType, job.experience, ...job.tags],
     openGraph: {
-      title: `${job.title} - TCC Careers`,
+      title: `${job.title} - TCC Recruitment`,
       description: job.pitch,
       type: "website",
     },
@@ -58,7 +58,7 @@ export default async function JobPage({ params }: JobPageProps) {
     description: job.pitch,
     hiringOrganization: {
       "@type": "Organization",
-      name: "TCC Careers",
+      name: "TCC Recruitment",
     },
     jobLocation: {
       "@type": "Place",

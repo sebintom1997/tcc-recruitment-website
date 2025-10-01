@@ -7,7 +7,12 @@
     "dept": "Engineering",
     "workType": "Full-time",
     "experience": "Senior",
-    "tags": ["React", "Node.js", "TypeScript", "AWS"],
+    "tags": [
+      "React",
+      "Node.js",
+      "TypeScript",
+      "AWS"
+    ],
     "postedAt": "2025-09-20T10:00:00Z",
     "description": "## Mission\n\nAs a Senior Full Stack Engineer, you'll architect and build the core platform that powers global talent acquisition. You'll work with cutting-edge technologies to create seamless experiences for both job seekers and employers.\n\n## Impact\n\n- Lead the development of scalable web applications serving millions of users\n- Mentor junior developers and contribute to technical decisions\n- Build features that directly impact hiring success rates\n- Collaborate with cross-functional teams to deliver exceptional user experiences\n\n## Must-have\n\n- 5+ years of experience with React, Node.js, and TypeScript\n- Strong understanding of cloud platforms (AWS preferred)\n- Experience with database design and optimization\n- Proven track record of building scalable applications\n- Excellent communication and collaboration skills\n\n## Nice-to-have\n\n- Experience with Next.js and modern React patterns\n- Knowledge of microservices architecture\n- Background in HR tech or recruitment platforms\n- Contributions to open source projects\n\n## Perks\n\n- Competitive salary and equity package\n- Flexible remote work arrangements\n- Annual learning budget of $2,000\n- Premium health, dental, and vision insurance\n- 4 weeks PTO + public holidays\n\n## Process\n\n1. Application review (3-5 business days)\n2. Initial phone screen with hiring manager (30 minutes)\n3. Technical interview with senior engineers (90 minutes)\n4. System design discussion (60 minutes)\n5. Final interview with leadership team (45 minutes)\n6. Reference checks and offer"
   },
@@ -19,7 +24,12 @@
     "dept": "Data",
     "workType": "Full-time",
     "experience": "Mid-level",
-    "tags": ["Python", "Machine Learning", "TensorFlow", "SQL"],
+    "tags": [
+      "Python",
+      "Machine Learning",
+      "TensorFlow",
+      "SQL"
+    ],
     "postedAt": "2025-09-18T14:30:00Z",
     "description": "## Mission\n\nDrive innovation in talent matching through advanced machine learning models. You'll build the intelligence behind our platform that predicts successful placements and optimizes candidate recommendations.\n\n## Impact\n\n- Develop ML models that improve placement success rates by 40%\n- Build recommendation systems for candidate-job matching\n- Create predictive analytics for recruitment trends\n- Collaborate with engineering to deploy models at scale\n\n## Must-have\n\n- Master's degree in Computer Science, Statistics, or related field\n- 3+ years of experience in machine learning and data science\n- Proficiency in Python, SQL, and ML frameworks (TensorFlow/PyTorch)\n- Experience with statistical modeling and hypothesis testing\n- Strong analytical and problem-solving skills\n\n## Nice-to-have\n\n- Experience with natural language processing\n- Knowledge of recommendation systems\n- Background in HR analytics or people data\n- Experience with cloud ML platforms (AWS SageMaker, GCP AI)\n\n## Perks\n\n- Competitive salary and equity\n- Hybrid work model (2-3 days in office)\n- Conference attendance and learning opportunities\n- Top-tier equipment and development tools\n- Health and wellness benefits\n\n## Process\n\n1. Application and portfolio review\n2. Technical screening with data team lead\n3. Case study presentation (take-home project)\n4. Technical deep-dive with senior data scientists\n5. Cultural fit interview with hiring manager\n6. Final discussion with VP of Data"
   },
@@ -31,7 +41,12 @@
     "dept": "Design",
     "workType": "Full-time",
     "experience": "Mid-level",
-    "tags": ["Figma", "Design Systems", "User Research", "Prototyping"],
+    "tags": [
+      "Figma",
+      "Design Systems",
+      "User Research",
+      "Prototyping"
+    ],
     "postedAt": "2025-09-15T09:15:00Z",
     "description": "## Mission\n\nCreate world-class user experiences that simplify the complex world of recruitment. You'll design interfaces that delight both job seekers and hiring managers while maintaining accessibility and usability at scale.\n\n## Impact\n\n- Design core user flows that serve millions of job seekers\n- Establish and evolve our design system\n- Conduct user research to inform product decisions\n- Collaborate closely with engineering and product teams\n\n## Must-have\n\n- 3+ years of product design experience\n- Expert-level proficiency in Figma and design tools\n- Strong portfolio demonstrating end-to-end design process\n- Experience with user research and usability testing\n- Understanding of responsive design and accessibility principles\n\n## Nice-to-have\n\n- Experience designing for HR or recruitment platforms\n- Knowledge of front-end development (HTML/CSS/JavaScript)\n- Background in design systems and component libraries\n- Experience with international/localized products\n\n## Perks\n\n- Competitive compensation and equity\n- Flexible remote work setup\n- Annual design conference budget\n- Latest design tools and software\n- Collaborative and creative work environment\n\n## Process\n\n1. Portfolio review and initial screening\n2. Design challenge (take-home exercise)\n3. Portfolio presentation with design team\n4. Cross-functional collaboration interview\n5. Final interview with Chief Design Officer"
   },
@@ -43,7 +58,12 @@
     "dept": "Engineering",
     "workType": "Full-time",
     "experience": "Mid-level",
-    "tags": ["React", "TypeScript", "Next.js", "CSS"],
+    "tags": [
+      "React",
+      "TypeScript",
+      "Next.js",
+      "CSS"
+    ],
     "postedAt": "2025-09-22T16:45:00Z",
     "description": "## Mission\n\nBuild the frontend experiences that power our global recruitment platform. You'll work with modern React technologies to create fast, accessible, and beautiful user interfaces.\n\n## Impact\n\n- Develop responsive web applications used by millions\n- Implement design system components and patterns\n- Optimize performance and accessibility across all devices\n- Collaborate with designers and backend engineers\n\n## Must-have\n\n- 3+ years of frontend development experience\n- Strong proficiency in React, TypeScript, and modern CSS\n- Experience with Next.js or similar React frameworks\n- Understanding of web performance optimization\n- Knowledge of accessibility standards and best practices\n\n## Nice-to-have\n\n- Experience with animation libraries (Framer Motion)\n- Knowledge of testing frameworks (Jest, Cypress)\n- Background in design systems and component libraries\n- Experience with state management (Redux, Zustand)\n\n## Perks\n\n- Competitive salary and benefits\n- Remote-first culture with optional office access\n- Professional development budget\n- Top-tier development equipment\n- Flexible working hours across time zones\n\n## Process\n\n1. Technical resume review\n2. Coding challenge (React component development)\n3. Technical interview with frontend team\n4. System design discussion (frontend focus)\n5. Team fit interview with engineering manager"
   },
@@ -55,7 +75,12 @@
     "dept": "Product",
     "workType": "Full-time",
     "experience": "Senior",
-    "tags": ["Product Strategy", "Analytics", "A/B Testing", "Growth"],
+    "tags": [
+      "Product Strategy",
+      "Analytics",
+      "A/B Testing",
+      "Growth"
+    ],
     "postedAt": "2025-09-19T11:20:00Z",
     "description": "## Mission\n\nLead growth initiatives that expand our reach and improve user engagement. You'll define product strategies that drive sustainable growth while maintaining exceptional user experience.\n\n## Impact\n\n- Own growth metrics and drive user acquisition strategies\n- Design and execute A/B tests to optimize conversion funnels\n- Collaborate with engineering and design on growth features\n- Analyze user behavior to identify expansion opportunities\n\n## Must-have\n\n- 5+ years of product management experience with focus on growth\n- Strong analytical skills and experience with data tools\n- Proven track record of driving user acquisition and retention\n- Experience with A/B testing and experimentation frameworks\n- Excellent communication and stakeholder management skills\n\n## Nice-to-have\n\n- Background in marketplace or two-sided platform products\n- Experience with international expansion and localization\n- Knowledge of SEO and digital marketing strategies\n- Technical background or engineering experience\n\n## Perks\n\n- Competitive base salary plus performance bonuses\n- Equity package with high growth potential\n- Hybrid work model with modern office spaces\n- Unlimited PTO policy\n- Executive coaching and leadership development\n\n## Process\n\n1. Application and case study review\n2. Product sense interview with hiring manager\n3. Growth case study presentation\n4. Cross-functional collaboration interview\n5. Executive interview with VP of Product"
   },
@@ -67,7 +92,12 @@
     "dept": "Marketing",
     "workType": "Full-time",
     "experience": "Mid-level",
-    "tags": ["Content Marketing", "SEO", "Social Media", "Analytics"],
+    "tags": [
+      "Content Marketing",
+      "SEO",
+      "Social Media",
+      "Analytics"
+    ],
     "postedAt": "2025-09-17T13:10:00Z",
     "description": "## Mission\n\nDevelop and execute content strategies that build brand awareness and drive organic growth. You'll create engaging content that resonates with both job seekers and employers worldwide.\n\n## Impact\n\n- Create content that drives 50%+ organic traffic growth\n- Develop thought leadership content for executive team\n- Build SEO-optimized content strategies\n- Manage social media presence across multiple platforms\n\n## Must-have\n\n- 3+ years of content marketing experience\n- Strong writing and editing skills across multiple formats\n- Experience with SEO and content optimization\n- Knowledge of social media marketing and analytics tools\n- Understanding of B2B and B2C content strategies\n\n## Nice-to-have\n\n- Experience in HR tech or recruitment industry\n- Background in video content creation and editing\n- Knowledge of marketing automation tools\n- Experience with international content and localization\n\n## Perks\n\n- Competitive salary and performance bonuses\n- Flexible remote work arrangements\n- Creative freedom and content ownership\n- Professional development and conference attendance\n- Collaborative and supportive team environment\n\n## Process\n\n1. Portfolio and writing samples review\n2. Content strategy discussion with marketing team\n3. Writing exercise and content planning session\n4. Cross-functional interview with product and sales\n5. Final interview with CMO"
   },
@@ -79,7 +109,12 @@
     "dept": "Engineering",
     "workType": "Full-time",
     "experience": "Senior",
-    "tags": ["AWS", "Docker", "Kubernetes", "Terraform"],
+    "tags": [
+      "AWS",
+      "Docker",
+      "Kubernetes",
+      "Terraform"
+    ],
     "postedAt": "2025-09-21T08:30:00Z",
     "description": "## Mission\n\nOwn the infrastructure and deployment pipelines that keep our platform running smoothly for millions of users. You'll build scalable, secure, and reliable systems that support rapid growth.\n\n## Impact\n\n- Manage infrastructure serving 99.9% uptime SLA\n- Build CI/CD pipelines that enable rapid, safe deployments\n- Implement monitoring and alerting systems\n- Lead infrastructure security and compliance initiatives\n\n## Must-have\n\n- 5+ years of DevOps/SRE experience\n- Expert-level knowledge of AWS services and architecture\n- Experience with containerization (Docker) and orchestration (Kubernetes)\n- Proficiency in Infrastructure as Code (Terraform, CloudFormation)\n- Strong scripting skills (Python, Bash) and automation mindset\n\n## Nice-to-have\n\n- Experience with multi-region deployments and disaster recovery\n- Knowledge of security best practices and compliance frameworks\n- Background in high-traffic web applications\n- Experience with monitoring tools (Datadog, New Relic)\n\n## Perks\n\n- Top-tier compensation and equity package\n- Flexible remote work with optional office access\n- Professional certification and training budget\n- Latest tools and technology stack\n- On-call compensation and flexible schedules\n\n## Process\n\n1. Technical resume and experience review\n2. Infrastructure design challenge\n3. Technical interview with senior engineers\n4. System architecture discussion\n5. Final interview with engineering leadership"
   },
@@ -91,7 +126,12 @@
     "dept": "Operations",
     "workType": "Full-time",
     "experience": "Graduate",
-    "tags": ["Project Management", "Process Improvement", "Communication", "Analytics"],
+    "tags": [
+      "Project Management",
+      "Process Improvement",
+      "Communication",
+      "Analytics"
+    ],
     "postedAt": "2025-09-16T12:00:00Z",
     "description": "## Mission\n\nSupport our growing operations team by coordinating projects, optimizing processes, and ensuring excellent service delivery across all time zones and regions.\n\n## Impact\n\n- Coordinate cross-functional projects and initiatives\n- Identify and implement process improvements\n- Support client onboarding and success initiatives\n- Maintain operational documentation and knowledge base\n\n## Must-have\n\n- Bachelor's degree in Business, Operations, or related field\n- 1-2 years of experience in operations, project management, or similar role\n- Strong organizational and communication skills\n- Proficiency in project management tools and spreadsheets\n- Detail-oriented with ability to manage multiple priorities\n\n## Nice-to-have\n\n- Experience in recruitment or HR services industry\n- Knowledge of process improvement methodologies\n- Familiarity with CRM and operations software\n- International business or cross-cultural experience\n\n## Perks\n\n- Competitive entry-level salary with growth potential\n- Hybrid work model with modern office environment\n- Mentorship and career development programs\n- Health and wellness benefits\n- Team building and social activities\n\n## Process\n\n1. Application and cover letter review\n2. Initial phone interview with hiring manager\n3. Case study on process improvement\n4. Team interview with operations colleagues\n5. Final interview with Operations Director"
   },
@@ -103,7 +143,12 @@
     "dept": "Data",
     "workType": "Full-time",
     "experience": "Mid-level",
-    "tags": ["SQL", "Python", "Tableau", "Statistics"],
+    "tags": [
+      "SQL",
+      "Python",
+      "Tableau",
+      "Statistics"
+    ],
     "postedAt": "2025-09-14T15:45:00Z",
     "description": "## Mission\n\nAnalyze business data to uncover trends, measure performance, and provide insights that guide strategic decisions across all departments.\n\n## Impact\n\n- Create dashboards and reports for executive decision-making\n- Analyze recruitment metrics and identify optimization opportunities\n- Support A/B testing and experimentation initiatives\n- Collaborate with stakeholders to define key business metrics\n\n## Must-have\n\n- 2-4 years of data analysis experience\n- Advanced SQL skills and database query optimization\n- Experience with data visualization tools (Tableau, Power BI)\n- Strong statistical analysis and hypothesis testing skills\n- Ability to communicate complex data insights to non-technical stakeholders\n\n## Nice-to-have\n\n- Programming skills in Python or R\n- Experience with cloud data platforms (AWS, Snowflake)\n- Background in HR analytics or recruitment metrics\n- Knowledge of machine learning concepts\n\n## Perks\n\n- Competitive salary and annual bonus\n- Remote work flexibility with global team\n- Professional development in data science\n- Access to cutting-edge analytics tools\n- Collaborative and data-driven culture\n\n## Process\n\n1. Technical assessment and case study\n2. SQL and analysis skills interview\n3. Business case presentation\n4. Stakeholder communication simulation\n5. Final interview with Head of Data"
   },
@@ -115,7 +160,12 @@
     "dept": "Engineering",
     "workType": "Internship",
     "experience": "Graduate",
-    "tags": ["React", "Node.js", "Git", "Agile"],
+    "tags": [
+      "React",
+      "Node.js",
+      "Git",
+      "Agile"
+    ],
     "postedAt": "2025-09-13T10:15:00Z",
     "description": "## Mission\n\nGain hands-on experience building production software while contributing to meaningful projects. You'll work alongside senior engineers on features that directly impact user experience.\n\n## Impact\n\n- Build and ship features used by thousands of users\n- Learn industry best practices for software development\n- Contribute to code reviews and technical discussions\n- Present your work to engineering and product teams\n\n## Must-have\n\n- Currently pursuing or recently completed Computer Science degree\n- Solid understanding of programming fundamentals\n- Experience with web development technologies (HTML, CSS, JavaScript)\n- Familiarity with Git version control\n- Strong problem-solving and learning abilities\n\n## Nice-to-have\n\n- Experience with React or similar frontend frameworks\n- Knowledge of backend development (Node.js, Python)\n- Understanding of databases and API development\n- Previous internship or project experience\n\n## Perks\n\n- Competitive internship stipend\n- Mentorship from senior engineers\n- Flexible hybrid work arrangement\n- Intern events and networking opportunities\n- Potential for full-time offer upon graduation\n\n## Process\n\n1. Resume and transcript review\n2. Technical phone screen\n3. Coding challenge (take-home or live)\n4. Final interview with engineering team\n5. Offer and internship placement"
   },
@@ -127,7 +177,12 @@
     "dept": "Marketing",
     "workType": "Full-time",
     "experience": "Graduate",
-    "tags": ["Sales", "Lead Generation", "CRM", "Communication"],
+    "tags": [
+      "Sales",
+      "Lead Generation",
+      "CRM",
+      "Communication"
+    ],
     "postedAt": "2025-09-12T14:20:00Z",
     "description": "## Mission\n\nGenerate qualified leads and schedule meetings for our sales team. You'll be the first point of contact for potential clients, introducing them to our recruitment solutions.\n\n## Impact\n\n- Generate 50+ qualified leads per month\n- Schedule demos and meetings for account executives\n- Build and maintain prospect databases\n- Contribute to sales strategy and process improvements\n\n## Must-have\n\n- Bachelor's degree or equivalent experience\n- Excellent written and verbal communication skills\n- Strong research and prospecting abilities\n- Comfort with phone calls and email outreach\n- Goal-oriented with competitive drive\n\n## Nice-to-have\n\n- Previous sales or customer-facing experience\n- Familiarity with CRM systems (Salesforce, HubSpot)\n- Understanding of B2B sales processes\n- Interest in HR tech or recruitment industry\n\n## Perks\n\n- Base salary plus commission structure\n- Comprehensive sales training program\n- Career advancement opportunities\n- Modern office with hybrid flexibility\n- Team incentives and recognition programs\n\n## Process\n\n1. Application and phone screening\n2. Sales simulation exercise\n3. Interview with sales team lead\n4. Final interview with Sales Director\n5. Reference check and offer"
   },
@@ -139,7 +194,12 @@
     "dept": "Operations",
     "workType": "Full-time",
     "experience": "Executive",
-    "tags": ["Executive Support", "Project Management", "Communication", "Organization"],
+    "tags": [
+      "Executive Support",
+      "Project Management",
+      "Communication",
+      "Organization"
+    ],
     "postedAt": "2025-09-11T09:30:00Z",
     "description": "## Mission\n\nProvide comprehensive executive support to our CEO while managing special projects and cross-functional initiatives that drive company growth.\n\n## Impact\n\n- Manage CEO's complex calendar and travel arrangements\n- Coordinate board meetings and investor communications\n- Lead special projects and cross-departmental initiatives\n- Serve as liaison between executive team and other departments\n\n## Must-have\n\n- 5+ years of executive assistant experience supporting C-level executives\n- Exceptional organizational and time management skills\n- Strong written and verbal communication abilities\n- Experience with calendar management and travel coordination\n- Discretion and ability to handle confidential information\n\n## Nice-to-have\n\n- Experience in high-growth tech companies\n- Project management certification or experience\n- Background in investor relations or board support\n- International business and travel coordination experience\n\n## Perks\n\n- Competitive salary commensurate with experience\n- Flexible hybrid work arrangement\n- Direct exposure to executive decision-making\n- Professional development opportunities\n- Comprehensive benefits package\n\n## Process\n\n1. Resume and cover letter review\n2. Initial interview with HR\n3. Working session with current executive team\n4. Final interview with CEO\n5. Reference check and offer"
   }
